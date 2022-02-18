@@ -83,8 +83,10 @@ function calcFinalPrice(cartTotal, couponValue, tax){
 /*
     TEXT ANSWER HERE
     Customer properties:
-    
-
+    name: String - THis is used to identify each customer.
+    phone number: number - This will be useful in case something gets lost during their visit so the store can return it.
+    address: String - This is useful for record keeping so the company knows which locations visit the most. It's also useful to know in case they order food for delivery.
+    preferences: array of strings - This helps the restaurant keep track of things that can help them make the customer experience better.
 */
 
 /*
@@ -93,3 +95,10 @@ function calcFinalPrice(cartTotal, couponValue, tax){
 */
 
 //CODE HERE
+const customer = {
+    name: "Dudley Dursley",
+    phoneNumber: 4829029405,
+    address: "4 Privet Drive, Little Whinging, Surrey",
+    preferences: ["Loves to get a consistent amount of presents", "Eats a lot", "Requires patience"]
+}
+console.log(customer)
