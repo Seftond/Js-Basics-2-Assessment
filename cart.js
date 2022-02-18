@@ -35,8 +35,8 @@ const cart = [
 
 //CODE HERE
 
-// const summedPrice = cart.reduce(/* CALLBACK HERE */)
-
+const summedPrice = cart.map(element => element.price).reduce((accume, current) => accume + current)
+console.log(summedPrice)
 
 //////////////////PROBLEM 2////////////////////
 /*  
@@ -54,7 +54,10 @@ const cart = [
 */
 
 //CODE HERE
-
+function calcFinalPrice(cartTotal, couponValue, tax){
+    cartTotal = (cartTotal * tax) - couponValue
+    return cartTotal
+}
 
 
 //////////////////PROBLEM 3////////////////////
@@ -79,6 +82,8 @@ const cart = [
 
 /*
     TEXT ANSWER HERE
+    Customer properties:
+    
 
 */
 
